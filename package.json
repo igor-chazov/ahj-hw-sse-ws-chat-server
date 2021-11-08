@@ -1,0 +1,28 @@
+{
+  "name": "sse-ws-chat-server",
+  "version": "1.0.0",
+  "description": "EventSource, Websockets Chat server project",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "repository": "https://github.com/igor-chazov/ahj-hw-sse-ws-chat-server",
+  "author": "Igor Chazov <igor-chazov@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^3.0.4",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.2"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
